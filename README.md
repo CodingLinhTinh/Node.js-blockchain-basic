@@ -44,22 +44,21 @@ npm install -D typescript @types/node
 * thuật toán RSA 
 RSA gồm 2 khóa public key và private key.
 Cách tạo:
-    Public key
+    * Public key
     ```
-    * Chọn hai số nguyên tố. Giả sử P = 53 và Q = 59.
-    Bây giờ Phần đầu tiên của Khóa công khai: 
-                n = P * Q = 3127.
-    * Chúng ta cũng cần một số mũ nhỏ nói e:
-    Nhưng e Phải là một số nguyên, không phải là một thừa số của n. 1 < e <Φ (n) [Φ (n) được thảo luận bên dưới],
+        * Chọn hai số nguyên tố. Giả sử P = 53 và Q = 59.
+        Bây giờ Phần đầu tiên của Khóa công khai: 
+                    n = P * Q = 3127.
+        * Chúng ta cũng cần một số mũ nhỏ nói e:
+        Nhưng e Phải là một số nguyên, không phải là một thừa số của n. 1 < e <Φ (n) [Φ (n) được thảo luận bên dưới],
 
-    * Bây giờ chúng ta hãy coi nó bằng 3.
-    
-    =>Khóa công khai của chúng ta được làm bằng n và e
+        * Bây giờ chúng ta hãy coi nó bằng 3.
 
+        =>Khóa công khai của chúng ta được làm bằng n và e
     ```
-
-    Private Key
-    ```
+        
+   * Private Key
+   ```
     * Chúng ta cần tính Φ (n):
     Sao cho Φ (n) = (P-1) (Q-1)
         vì vậy, Φ (n) = 3016
@@ -67,28 +66,30 @@ Cách tạo:
     * Bây giờ hãy tính Private Key, d:
         d = (k * Φ (n) + 1) / e với một số nguyên k
             Với k = 2, giá trị của d là 2011.
-    ```
-Minh họa bằng Python
-    ```
-    import math
+   ```
     
-    message = int(input("Enter the message to be encrypted: ")) 
+ * Minh họa bằng Python
+   ```
+        import math
+
+        message = int(input("Enter the message to be encrypted: ")) 
+
+        p = 52
+        q = 59
+        e = 3
+
+        n = p*q
+
+        def encrypt(me):
+            en = math.pow(me,e)
+            c = en % n
+            print("Encrypted Message is: ", c)
+            return c
+
+        print("Original Message is: ", message)
+        c = encrypt(message)
+   ```
     
-    p = 52
-    q = 59
-    e = 3
-    
-    n = p*q
-    
-    def encrypt(me):
-        en = math.pow(me,e)
-        c = en % n
-        print("Encrypted Message is: ", c)
-        return c
-    
-    print("Original Message is: ", message)
-    c = encrypt(message)
-    ```
     Output
     ```
     Enter the message to be encrypted: 
