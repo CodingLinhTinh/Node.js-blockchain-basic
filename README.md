@@ -99,13 +99,13 @@ Cách tạo:
     ```
 
 * Thuật toán SHA256
-    Chi tiết về SHA256
+   * Chi tiết về SHA256
         ```
         https://www.simplilearn.com/tutorials/cyber-security-tutorial/sha-256-algorithm#what_is_hashing
         ```
-    Hiểu đơn giản: là Mã chỉ có thể encrypt nhưng không thể decrypt( một chiều ).
+   * Hiểu đơn giản: là Mã chỉ có thể encrypt nhưng không thể decrypt( một chiều ).
 
-    Mô tả bằng Python
+   * Mô tả bằng Python
         ```
         import hashlib
         string="ngoc"
