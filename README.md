@@ -120,9 +120,9 @@ Cách tạo:
 * Thuật toán SHA256
     [Chi tiết về SHA256](https://www.simplilearn.com/tutorials/cyber-security-tutorial/sha-256-algorithm#what_is_hashing)
 
-    Hiểu đơn giản: là Mã chỉ có thể encrypt nhưng không thể decrypt( một chiều ).
+    * Hiểu đơn giản: là Mã chỉ có thể encrypt nhưng không thể decrypt( một chiều ).
 
-    Mô tả bằng Python
+    * Mô tả bằng Python
         ```
         import hashlib
         string="ngoc"
@@ -138,7 +138,7 @@ Cách tạo:
         print("Block Size : ", end ="")
         print(result.block_size)
         ```
-    Output
+    * Output
         ```
         String : ngoc
         Hash Value : < sha256 HASH object @ 0x7fd1a92339b0 >
