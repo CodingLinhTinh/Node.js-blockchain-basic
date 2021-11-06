@@ -42,9 +42,9 @@ npm install -D typescript @types/node
 
     >1. Fork kho lưu trữ này.
     >2. Tạo một nhánh: `git checkout -b <branch_name>`.
-    >3. Thực hiện các thay đổi của bạn và cam kết chúng: `` git commit -m '<commit_message>' '
+    >3. Thực hiện các thay đổi của bạn và commit chúng: `` git commit -m '<commit_message>' '
     >4. Gửi đến nhánh gốc: `git push origin <project_name> / <location>`
-    >5. Tạo yêu cầu kéo.
+    >5. Tạo yêu cầu fork.
 
 Hoặc là thả sao ⭐⭐⭐⭐⭐
 
