@@ -158,4 +158,8 @@ CodingLinhTinh
 This project is licensed under the ISC License.
 
 ## See my other repos
-Update later...
+⭐<a href="https://github.com/CodingLinhTinh/Instagram-Auto-Follow-Bot.git">Instagram-Auto-Follow-Bot</a>
+
+⭐<a href="https://github.com/CodingLinhTinh/Slim-Shopping-Cart.git">Slim-Shopping-Cart</a>
+
+⭐<a href="https://github.com/CodingLinhTinh/Cookies-Auto-Clicking-Bot.git">Cookies-Auto-Clicking-Bot</a>
